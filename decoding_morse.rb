@@ -24,12 +24,6 @@ def decode_word(morse_code)
 end
 
 
-# Create a method to decode a Morse code character
-def decode_char(morse_code)
-  morse_code_dict[morse_code.strip] || "UNKNOWN"
-end
-
-
 # Create a method to decode the entire message in Morse code
 def decode_message(morse_message)
   words = morse_message.split("   ")
