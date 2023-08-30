@@ -9,5 +9,5 @@ def decode_char(morse_code)
     "-.--" => "Y", "--.." => "Z"
   }
 
-  morse_code_dict[morse_code.strip] || "UNKNOWN"
+  morse_code_dict[morse_code.strip.gsub(/\s+/, '')] || "UNKNOWN"
 end
