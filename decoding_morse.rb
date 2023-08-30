@@ -27,7 +27,17 @@ end
 # Create a method to decode a Morse code character
 
 
-# Create a method to decode the entire message in Morse code
 
+# Create a method to decode the entire message in Morse code
+def decode_message(morse_message)
+  words = morse_message.split("   ")
+  decoded_words = words.map do|word|
+  characters = word.split(" ")
+  decoded_characters = characters.map { |char| decode_char(char) }
+  decoded_characters.join("")
+  end
+
+  decoded_words.join("   ")
+end
 
 # Create a method that prints hellow world in morse code
