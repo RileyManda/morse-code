@@ -9,7 +9,14 @@ def decode_char(morse_code)
     '--' => 'M', '-.' => 'N', '---' => 'O', '.--.' => 'P',
     '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T',
     '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
-    '-.--' => 'Y', '--..' => 'Z'
+    '-.--' => 'Y', '--..' => 'Z',
+    '.----' => '1', '..---' => '2', '...--' => '3',
+    '....-' => '4', '.....' => '5', '-....' => '6',
+    '--...' => '7', '---..' => '8', '----.' => '9',
+    '-----' => '0',
+    '.-.-.' => '.', '--..--' => ',', '..--..' => '?',
+    '-.-.--' => '!', '-..-.' => '/', '-...-' => '=',
+    '---...' => ':', '.-.-.-' => '.'
   }
 
   morse_code_dict[morse_code.strip] || 'UNKNOWN'
@@ -24,10 +31,11 @@ end
 def decode_message(morse_message)
   words = morse_message.split('   ')
   decoded_words = words.map do |word|
-    characters = word.chars
+    characters = word.split
     decoded_characters = characters.map { |char| decode_char(char) }
     decoded_characters.join
   end
 
-  decoded_words.join('   ')
+  decoded_words.join(' ')
 end
+
