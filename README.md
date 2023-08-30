@@ -237,6 +237,6 @@ Thank you for your continued support.
 
 ## 📝 License <a name="license"></a>
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE.txt)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
