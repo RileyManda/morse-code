@@ -23,7 +23,7 @@ end
 # Create a method to decode the entire message in Morse code
 def decode_message(morse_message)
   words = morse_message.split('   ')
-  decoded_words = words.map do |_word|
+  decoded_words = words.map do |word|
     characters = word.chars
     decoded_characters = characters.map { |char| decode_char(char) }
     decoded_characters.join
@@ -31,3 +31,4 @@ def decode_message(morse_message)
 
   decoded_words.join('   ')
 end
+
