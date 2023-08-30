@@ -38,4 +38,3 @@ def decode_message(morse_message)
 
   decoded_words.join(' ')
 end
-
