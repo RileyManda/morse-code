@@ -94,10 +94,9 @@ git clone https://github.com/RileyManda/morse-code.git
 
 Install this project with:
 
-
 ```sh
-  cd my-project
-  npm i
+  irb
+  load decoding_morse
 ```
 
 
