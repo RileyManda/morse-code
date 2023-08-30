@@ -1,13 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-
-  <img src="app-logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Morse Code</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -39,7 +31,7 @@
 
 # 📖 Morse Code <a name="about-project"></a>
 
-Morse Code is a  
+Morse Code is a simple application with methods for decoding strings of morse code into english and vice versa. It is built with Ruby. 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -58,7 +50,7 @@ Morse Code is a
 ## 🛠 Key Features <a name="key-features"></a>
 ### Features <a name="key-features"></a>
 
-**Decode Morse Code**
+**Decode Morse Code methods**
 
 
 <p align="right">
@@ -94,7 +86,7 @@ Clone this repository to your desired folder:
 
 ```sh
 cd my-folder
-git clone https://github.com/RileyManda/Morse Code.git
+git clone https://github.com/RileyManda/morse-code.git
 ```
 
 
@@ -111,11 +103,12 @@ Install this project with:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following terminal command:
 
 
 ```sh
-  npm start
+  irb
+  load decoding_morse
 ```
 
 
@@ -124,9 +117,19 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npm test
+  irb
 ```
 
+```sh
+  load decoding_morse
+```
+
+```sh
+  decode_char('.-')
+  decode_word('-- -.--')
+  decode_message("-- -.--   -. .- -- .")
+  decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..    --- ..-.    .-. ..- -... .. . ...")
+```
 
 ### Deployment
 
@@ -163,7 +166,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Search and filter by city]**
+- [ ] **[front end]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -173,8 +176,7 @@ You can deploy this project using:
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/RileyManda/Morse Code/issues).
+Feel free to check the [issues page](https://github.com/RileyManda/morse-code/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,8 +200,7 @@ Thank you for taking the time to explore this project! Your support means a lot 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to express my sincere gratitude to [Microverse](https://github.com/microverseinc), the dedicated reviewers, and collaborators. Your unwavering support, feedback, and collaborative efforts have played an immense role in making this journey a resounding success. I am truly grateful for your contributions and for being an integral part of my achievements.
-I would like to also send out special thanks to [Nelson Sakwa
-](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for the original Ux design that inspired this project.
+
 Thank you for your continued support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -230,10 +231,8 @@ Thank you for your continued support.
 
 <!-- ATTRIBUTION -->
 
-## 👥 Attribution <a name="attribution"></a>
-- This project is based on the Original design by: [Nelson Sakwa
-](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
-- Original logo design from: [Svgrepo](https://www.svgrepo.com/)
+<!-- ## 👥 Attribution <a name="attribution"></a> -->
+
 
 <!-- LICENSE -->
 
